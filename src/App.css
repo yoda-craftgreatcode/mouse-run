@@ -1,0 +1,141 @@
+.valentine-card {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: 100dvh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.valentine-question {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 5rem;
+  text-align: center;
+  padding: 0 0.5rem;
+  color: #c45c7a;
+}
+
+.valentine-question-hint {
+  font-size: 0.85rem;
+  color: #b84d6b;
+  margin: -3rem 0 0 0;
+  opacity: 0.85;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.valentine-buttons {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.valentine-btn {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  letter-spacing: 0.02em;
+}
+
+.valentine-btn:hover {
+  transform: scale(1.03);
+}
+
+.valentine-btn:active {
+  transform: scale(0.98);
+}
+
+.valentine-btn:focus-visible {
+  outline: 2px solid #e84393;
+  outline-offset: 3px;
+}
+
+.valentine-btn-yes {
+  background: linear-gradient(135deg, #ff6b9d 0%, #e84393 100%);
+  color: white;
+  box-shadow: 0 4px 14px rgba(232, 67, 147, 0.4);
+}
+
+.valentine-btn-yes:hover {
+  box-shadow: 0 6px 20px rgba(232, 67, 147, 0.5);
+}
+
+.valentine-btn-no {
+  background: linear-gradient(135deg, #ffe0ec 0%, #ffc2d9 100%);
+  color: #b33971;
+  border: 2px solid rgba(179, 57, 113, 0.25);
+}
+
+.valentine-btn-no:hover {
+  box-shadow: 0 4px 14px rgba(179, 57, 113, 0.25);
+}
+
+.valentine-success {
+  text-align: center;
+}
+
+.valentine-success-message {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #c45c7a;
+}
+
+.valentine-success-heart {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 5rem auto 0;
+  transform: rotate(45deg);
+  background: #c45c7a;
+}
+
+.valentine-success-heart::before,
+.valentine-success-heart::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #c45c7a;
+}
+
+.valentine-success-heart::before {
+  top: -40px;
+  left: 0;
+}
+
+.valentine-success-heart::after {
+  left: -40px;
+  top: 0;
+}
+
+.valentine-no-spacer {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.75rem 1.5rem;
+  visibility: hidden;
+  pointer-events: none;
+}
